@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- lang is an attribute to specify the language i.e. english=en-->
+    <head>
+        <title>CatPhotoApp</title>
+        <!-- head tag also contains the link to the external CSS and Javascript pages -->
+    </head>
+    <body>
+        <h2>CatPhotoApp</h2> <!-- These are the heading tags from h1 to h6-->
+        <main>
+            <h3>Cat Photos</h3>
+            <p>Click here to view more <a href="#" target="blank">Cat Photos</a></p>
+            <a href="#"></a><img src="https://fcc.im/fcc-relaxing-cat" alt="A cute orange cat lying on its back."> <!-- alt is an attribute to describe images with text -->
+            <!-- <a> element links to another website -->
+            <h3>Cat Lists</h3>
+            <div class="lists"> <!-- div is an html tag to make divisions of content within a webpage so that they acn be styled using CSS -->
+                <!-- calss attribute is used to point to a specific classname for an element in stylesheet-->
+            <p>Things cats <i>love:</i></p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <img src="lasagna.jpg" alt="Lasagna">
+            <p>Things cats <strong>hate:</strong></p>
+            <ol>
+                <li>Flea Treatment</li>
+                <li>Thunder</li>
+                <li>Other cats</li>
+            </ol>
+            </div>
+            <img src="cats.jpg" alt="Cats">
+            <form action="/submit-cat-photo">
+                <label><input type="radio"> indoor</label> <br>
+                <label><input type="radio"> outdoor</label> <!-- after putting <label> tag if we click on the text then the radio button gets selected--> <br>
+                <input type="text" placeholder="cat photo URL" required> <!-- we want the control to prompt "Please fill out this field" so we put "required" attribute--><br>
+                <label for="external"><input id="external" type="radio" name="external-internal">external</label> <!-- name attribute is used with the buttons prompt inside it so that only one button at a time gets selected --> <br>
+                <label for="internal"><input id="internal" type="radio" name="external-internal">internal</label> <!-- for attribute specifies whether indoor or outdoor along with label tag --> <br>
+                
+                <label for="loving"><input type="checkbox" name="personality" id="loving">Loving</label> <br>
+                <label for="lazy"><input type="checkbox" id="lazy" name="personality">Lazy</label> <br>
+                <label for="energetic"><input type="checkbox" name="personality" id="energetic">Energetic</label> <br>
+                <button type="submit">Submit</button>
+
+                <label><input type="radio" checked> ingoing</label> <!-- when we put the checked attribute, the radio button is by default selected-->
+            </form>
+        </main>
+
+        <footer>
+            <p>No Copyright - <small> <a href="https://freecodecamp.org">freecodecamp.org</a></small></p>
+        </footer>
+    </body>
+</html>
